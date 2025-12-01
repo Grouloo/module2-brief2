@@ -29,13 +29,11 @@ Il présente des valeurs numériques, du texte (nom, prénom), et des données c
 
 Lors du nettoyage du jeu de données, nous avons :
 
-- Supprimé les valeurs indéfinies...
-  - En retirant les lignes n'ayant pas de valeurs définies pour `score_credit`
-  - En extrapolant linéairement les valeurs manquantes pour les autres colonnes
+- Remplacé les valeurs manquantes par les médianes des colonnes
 - Supprimé les erreurs apparentes du jeu de données (loyers négatifs)
-- Supprimé les valeurs aberrantes des colonnes `revenu_estime_mois` et `montant_pret`
+- Supprimé les valeurs aberrantes des colonnes `taille`, `poids`, `revenu_estime_mois` et `montant_pret`
 
-Nous sommes passé de 10 000 lignes avant nettoyage, à 4 625 lignes après nettoyage.
+Nous sommes passé de 10 000 lignes avant nettoyage, à 9 733 lignes après nettoyage.
 
 Le détail des évaluations et des décisions peut être retrouvé dans le fichier `workflow.ipynb`
 
